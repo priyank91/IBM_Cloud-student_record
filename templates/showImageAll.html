@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Result of Query{% endblock %}
+{% block content %}
+<p>
+{% for result in results%}
+Name : {{results["NAME"]}}
+Images :  <img src="https://s3-api.us-geo.objectstorage.softlayer.net/uijjmascer/{{results["PICTURE"]}}" height=200 width=200> 
+
+{% endfor %}
+</p>
+{% endblock %}

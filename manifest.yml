@@ -1,0 +1,5 @@
+applications:
+- name: mainAssignment1
+  memory: 256M
+  command: python main.py
+  random-route: true

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Result of Query{% endblock %}
+{% block content %}
+<p>
+{% for result in results %}
+	</br>
+	{% for key in result %}
+		{{key}} : <b>{{result[key]}}</b> 
+	{% endfor %}
+{% endfor %}
+</p>
+{% endblock %}

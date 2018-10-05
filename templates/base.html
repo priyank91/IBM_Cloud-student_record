@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}{% endblock %} Cloud Computing Course</title>
+    {% endblock %}
+</head>
+<body>
+    <div id="page">
+    <p>[<a href="/">Home</a>]<br/>
+
+    {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{# index page, providing a form to submit a city name #}
+{% extends "base.html" %}
+{% block content %}
+<h1>Priyank Arora UTA ID 1001553349</h1>
+<br>
+<p>
+ <form action="/Query1" method="get">
+  Enter Name of Student: <input type="text" name="student" maxlength="20" width="10"> <input type="submit" value="Search">
+</form>
+
+ <form action="/Query2" method="get">
+  Enter Student Grades: <input type="number" name="grades" max="100" min="0"> 
+  <input type="submit" value="Search">
+ </form>
+ 
+ <form action="/Query3" method="get">
+  Enter Student Name: <input type="text" name="student" maxlength="20" width="10"> 
+  Image: <input type="file" name="picture" accept="image/*"> 
+  <input type="submit" value="Update">
+</form>
+
+ <form action="/Query4" method="get" enctype="multipart/form-data">
+  Enter Student Name to Remove: <input type="text" name="student" maxlength="20" width="10"> 
+  <input type="submit" value="Delete">
+</form>
+
+<form action="/Query5" method="get">
+  Enter Student Name: <input type="text" name="student" maxlength="20" width="10"> 
+  Enter New Keyword: <input type="text" name="keyword" maxlength="20" width="10"> 
+  <input type="submit" value="Update">
+</form>
+
+<form action="/Query6" method="get">
+  Enter Student Name: <input type="text" name="student" maxlength="20" width="10"> 
+  Enter New Grades: <input type="text" name="grades" maxlength="20" width="10"> 
+  <input type="submit" value="Update">
+</form>
+
+</p>
+{% endblock %}
